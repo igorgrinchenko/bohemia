@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Products Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@600&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="link-logo">
+          <svg class="logo-image" width="72" height="65">
+            <use href="./images/icons/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="header-button" type="button" id="burger">
+          <svg class="burger-icon" width="48" height="40">
+            <use href="./images/icons/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- burger-menu -->
+      <div class="backdrop is-hidden" id="backdrop">
+        <div class="menu-wrapper">
+          <button type="button" class="close-menu__btn" id="close-menu">
+            <svg class="close-icon" width="50" height="50">
+              <use href="./images/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="menu-list">
+              <li class="menu-list__item main" id="products">
+                Products
+                <svg
+                  type="button"
+                  class="menu-list__btn"
+                  width="30"
+                  height="16"
+                  id="dropdown"
+                >
+                  <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                </svg>
+              </li>
+              <li class="menu-list__item off" id="prod-list">
+                <ul class="products-list">
+                  <li class="products-item products-link">All Products</li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">EVAICS</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">PS/RT</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">EVAICS BOX</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">BUS/RT</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">IOTE Cloud</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list__item">
+                <a href="" class="menu-list__link">Technologies</a>
+              </li>
+              <li class="menu-list__item main">
+                <a href="" class="menu-list__link">Integrations and Support</a>
+              </li>
+              <li class="menu-list__item main" id="developed">
+                Developed Projects
+                <svg
+                  type="button"
+                  class="menu-list__btn--develop"
+                  width="30"
+                  height="16"
+                  id="dropdown-developed"
+                >
+                  <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                </svg>
+              </li>
+              <li class="menu-list__item off" id="develop-items">
+                <ul class="developed-list">
+                  <li class="products-item products-link">All Products</li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">Start Your Project</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">Hign Energy</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">Smart City</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">Heavy Manufacturing</a>
+                  </li>
+                  <li class="products-item">
+                    <a href="#" class="products-link">Farm Sector</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list__item">
+                <a href="" class="menu-list__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-content__leftside">
+        <div class="container">
+          <h1 class="heading-1">Products</h1>
+          <div class="section-wrapper">
+            <div class="content-description">
+              <div class="logo-preview">
+                <svg class="logo-progect" width="100" height="60">
+                  <use href="./images/icons/icons.svg#icon-logo-2"></use>
+                </svg>
+                <h2 class="heading-2__logo">EVA ICS</h2>
+              </div>
+
+              <p class="content-text">
+                Open-source platform with unique features for Industrial and
+                Home IoT EVA ICS is a platform for automated control and
+                monitoring systems development, for any needs, from home/office
+                to industrial setups. It is completely free for non-commercial
+                use as well as for commercial, on condition that enterprise
+                integrates it on its own. The product is distributed as a free
+                software and is available under Apache License 2.0.
+              </p>
+              <button class="button-disabled">More info</button>
+            </div>
+            <div class="products-preview">
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/eva-image.png 1x,
+                    ./images/products/2x/@eva2x.png 2x
+                  "
+                  media="(min-width:1245px )"
+                />
+                <img
+                  src="./images/products/eva-image.png"
+                  alt="logo"
+                  class="product-image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-content__rightside">
+        <div class="container section-wrapper__secondary">
+          <div class="products-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/products/ps-rt.png       1x,
+                  ./images/products/2x/@ps-rt2x.png 2x
+                "
+                media="(min-width:1245px )"
+              />
+              <img
+                class="product-image"
+                src="./images/products/ps-rt.png"
+                alt="logo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="content-description">
+            <div class="logo-preview">
+              <svg class="logo-progect" width="100" height="60">
+                <use href="./images/icons/icons.svg#icon-ps-icon"></use>
+              </svg>
+              <h2 class="heading-2__logo">PS/RT</h2>
+            </div>
+            <p class="content-text">
+              Server developed especially for industrial applications, such as
+              EVA ICS: low latencies, secure model, ability to deal with slow
+              channels far from urban areas.
+            </p>
+            <button class="button-disabled">More info</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-content__leftside">
+        <div class="container section-wrapper">
+          <div class="content-description">
+            <div class="logo-preview">
+              <svg class="logo-progect" width="100" height="60">
+                <use href="./images/icons/icons.svg#icon-evabox"></use>
+              </svg>
+              <h2 class="heading-2__logo">EVAICS BOX</h2>
+            </div>
+            <p class="content-text">
+              EVAICS BOX is a powerful mini computer for all kinds of <br />
+              automation. It is based on Raspberry Pi compute module 4 and can
+              have up to 8 GB of RAM and up to 32 GB of eMMC
+            </p>
+            <button class="button-disabled">More info</button>
+          </div>
+          <div class="products-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/products/evabox.png       1x,
+                  ./images/products/2x/@evabox2x.png 2x
+                "
+                media="(min-width:1245px )"
+              />
+              <img
+                class="product-image"
+                src="./images/products/evabox.png"
+                alt="logo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section-content__rightside">
+        <div class="container bottom section-wrapper__secondary">
+          <div class="products-image">
+            <picture>
+              <source
+                srcset="
+                  ./images/products/elbus.png       1x,
+                  ./images/products/2x/@elbus2x.png 2x
+                "
+                media="(min-width:1245px )"
+              />
+              <img
+                class="product-image"
+                src="./images/products/elbus.png"
+                alt="logo"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="content-description">
+            <div class="logo-preview">
+              <svg class="logo-progect" width="100" height="60">
+                <use href="./images/icons/icons.svg#icon-bus"></use>
+              </svg>
+              <h2 class="heading-2__logo">BUS/RT</h2>
+            </div>
+            <p class="content-text">
+              BUS/RT is a rust-native IPC broker, written in Rust/Tokio,
+              inspired by zeromq and nanomsg.
+            </p>
+            <button class="button-disabled">More info</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Products</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Technologies</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Integrations and Support</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Developed Projects</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-container">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-docker"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer-text">&copy; 2022 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/products.js" type="module"></script>
+  </body>
+</html>
