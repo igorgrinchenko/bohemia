@@ -485,9 +485,10 @@ img {
 
 .hero-content {
   padding-top: 20px;
-  padding-bottom: 450px;
+  padding-bottom: 500px;
   background-image: url("../images/hero/hero-bgimage.svg");
   background-repeat: no-repeat;
+  background-size: 375px 478px;
   background-position: 0 325px;
 }
 
@@ -495,7 +496,7 @@ img {
   .hero-content {
     padding-top: 120px;
     padding-bottom: 173px;
-    background-position: 100% top;
+    background-position: 100% center;
   }
 }
 
@@ -503,7 +504,8 @@ img {
   .hero-content {
     padding-top: 120px;
     padding-bottom: 173px;
-    background-position: 95% top;
+    background-position: 95%;
+    background-size: 620px 790px;
   }
 }
 
