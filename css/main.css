@@ -249,6 +249,25 @@ img {
   }
 }
 
+.burger-icon {
+  width: 28px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .burger-icon {
+    width: 36px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1245px) {
+  .burger-icon {
+    width: 48px;
+    height: 40px;
+  }
+}
+
 .close-menu__btn {
   position: absolute;
   top: 30px;
@@ -456,8 +475,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 24px;
   margin-left: auto;
   border: none;
   cursor: pointer;
