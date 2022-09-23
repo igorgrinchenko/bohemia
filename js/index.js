@@ -79,7 +79,7 @@ const dropDownProducts = document.querySelector("#dropdown");
 const productsItem = document.querySelector("#prod-list");
 const productsCategory = document.querySelector("#products");
 
-dropDownProducts.addEventListener("click", () => {
+productsCategory.addEventListener("click", () => {
   productsItem.classList.toggle("off");
   dropDownProducts.classList.toggle("rotate");
   productsCategory.classList.toggle("hover");
@@ -89,43 +89,8 @@ const dropDownDevelop = document.querySelector("#dropdown-developed");
 const developedItem = document.querySelector("#develop-items");
 const projectsCategory = document.querySelector("#developed");
 
-dropDownDevelop.addEventListener("click", () => {
+projectsCategory.addEventListener("click", () => {
   developedItem.classList.toggle("off");
   dropDownDevelop.classList.toggle("rotate");
   projectsCategory.classList.toggle("hover");
 });
-
-///////
-// const swiper = new Swiper(".swiper", {
-//   direction: "horizontal",
-//   loop: true,
-//   slidesPerView: 3,
-//   spaceBetween: 40,
-//   centeredSlides: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 0,
-//       slideToClickedSlide: true,
-//     },
-//     // when window width is >= 480px
-//     768: {
-//       slidesPerView: 1,
-//       spaceBetween: 0,
-//       slideToClickedSlide: true,
-//     },
-//     // when window width is >= 640px
-//     1245: {
-//       slidesPerView: 4,
-//       spaceBetween: 0,
-//       slideToClickedSlide: true,
-//     },
-//   },
-// });
