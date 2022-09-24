@@ -7,7 +7,8 @@
   width: 100vw;
   height: 100vh;
   z-index: 110;
-  background-color: #4646463a;
+  background: var(--body-color);
+  opacity: 0.6;
   transition: 0.3s;
 }
 .is-hidden {

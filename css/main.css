@@ -236,7 +236,8 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 110;
-  background-color: rgba(70, 70, 70, 0.2274509804);
+  background: var(--body-color);
+  opacity: 0.6;
   transition: 0.3s;
 }
 

@@ -101,13 +101,12 @@ const productsHeaderMenu = document.querySelector("#product-category");
 const productMenuList = document.querySelector("#product-list");
 const productIcon = document.querySelector("#prod-icon");
 const productsLink = document.querySelector("dropdown-title");
+const backdropHeader = document.querySelector("#backdrop-header");
 
 productsHeaderMenu.addEventListener("click", () => {
   productMenuList.classList.toggle("off");
   productIcon.classList.toggle("rotate");
-  productIcon.classList.toggle("hover");
-
-  productsLink.classList.add("active");
+  backdropHeader.classList.toggle("off");
 });
 
 const projectsHeaderMenu = document.querySelector("#projects-category");
@@ -118,4 +117,5 @@ const projectsIcon = document.querySelector("#projects-icon");
 projectsHeaderMenu.addEventListener("click", () => {
   projectMenuList.classList.toggle("off");
   projectsIcon.classList.toggle("rotate");
+  backdropHeader.classList.toggle("off");
 });
