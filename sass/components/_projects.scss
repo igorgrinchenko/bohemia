@@ -1,7 +1,8 @@
 .pro-container {
   position: relative;
 }
-.section-projects {
+.section-projects,
+.section-news {
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -10,7 +11,11 @@
     padding-bottom: 60px;
   }
 }
-.projects-title {
+.section-news {
+  padding-top: 0;
+}
+.projects-title,
+.news-title {
   margin-bottom: 20px;
 
   @media (min-width: 768px) {

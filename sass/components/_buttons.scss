@@ -48,6 +48,57 @@
   }
 }
 
+.button-active {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 40px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  border: none;
+  background-color: var(--accent-color);
+  cursor: pointer;
+  color: var(--main-color);
+  &:before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    left: -7px;
+    top: 8px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    z-index: -1;
+  }
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 52px;
+    font-size: 22px;
+    line-height: 1.2;
+    &:before {
+      width: 200px;
+      height: 52px;
+    }
+
+    &:hover {
+      background-color: var(--main-color);
+      color: var(--accent-color);
+      transition: 0.2s;
+    }
+
+    &:hover:before {
+      border: 2px solid var(--accent-color);
+      transition: 0.2s;
+    }
+  }
+}
+
 .card-button {
   position: relative;
   display: flex;
