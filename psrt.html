@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PSRT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@600&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- mobile version -->
+      <div class="mobile-header__wrapper">
+        <div class="container header-container">
+          <a href="#" class="link-logo">
+            <img
+              class="logo-image"
+              src="./images/icons/evalogo.svg"
+              alt="logo"
+              width="72"
+              height="65"
+            />
+          </a>
+          <button class="header-button" type="button" id="burger">
+            <svg class="burger-icon" width="48" height="40">
+              <use href="./images/icons/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- burger-menu -->
+        <div class="backdrop is-hidden" id="backdrop">
+          <div class="menu-wrapper">
+            <button type="button" class="close-menu__btn" id="close-menu">
+              <svg class="close-icon" width="50" height="50">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu-list">
+                <li class="menu-list__item main" id="products">
+                  Products
+                  <svg
+                    type="button"
+                    class="menu-list__btn"
+                    width="30"
+                    height="16"
+                    id="dropdown"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </li>
+                <li class="menu-list__item off" id="prod-list">
+                  <ul class="products-list">
+                    <li class="products-item">
+                      <a class="products-link" href="./products.html"
+                        >All Products</a
+                      >
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">EVAICS</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">PS/RT</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">EVAICS BOX</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">BUS/RT</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">IOTE Cloud</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a href="" class="menu-list__link">Technologies</a>
+                </li>
+                <li class="menu-list__item main">
+                  <a href="" class="menu-list__link"
+                    >Integrations and Support</a
+                  >
+                </li>
+                <li class="menu-list__item main" id="developed">
+                  Developed Projects
+                  <svg
+                    type="button"
+                    class="menu-list__btn--develop"
+                    width="30"
+                    height="16"
+                    id="dropdown-developed"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </li>
+                <li class="menu-list__item off" id="develop-items">
+                  <ul class="developed-list">
+                    <li class="products-item products-link">All Projects</li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Start Your Project</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Hign Energy</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Smart City</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Heavy Manufacturing</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Farm Sector</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a href="" class="menu-list__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- descktop version -->
+      <div class="descktop-header__wrapper">
+        <div class="container header-container__descktop">
+          <div class="logo-wrapper">
+            <a href="#" class="header-logo__link">
+              <img
+                class="logo-image"
+                src="./images/icons/evalogo.svg"
+                alt="logo"
+                width="72"
+                height="65"
+              />
+            </a>
+          </div>
+
+          <div class="dropdown-menu">
+            <div class="menu-item main-columm">
+              <div class="main-wrapper" id="product-category">
+                <a href="#" class="dropdown-title">Products</a>
+                <svg
+                  type="button"
+                  class="menu-dropdown__btn"
+                  width="15"
+                  height="8"
+                  id="prod-icon"
+                >
+                  <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                </svg>
+              </div>
+
+              <ul class="menu-item__list off" id="product-list">
+                <li class="list-item__drop">
+                  <a href="">EVA ICS v4</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">EVA ICS v3</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">EVA ICS Cloud Manager UI</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href=""> PSRT</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">BUS/RT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item">
+              <a href="">Technologies</a>
+            </div>
+            <div class="menu-item">
+              <a href=""> Integrations and Support</a>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item main-columm">
+                <div class="main-wrapper" id="projects-category">
+                  <a href="" class="dropdown-title">Developed Projects</a>
+                  <svg
+                    type="button"
+                    class="menu-dropdown__btn"
+                    width="15"
+                    height="8"
+                    id="projects-icon"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </div>
+
+                <ul class="menu-item__list" id="projects-list">
+                  <li class="list-item__drop">
+                    <a href=""> Start Your Project</a>
+                  </li>
+                  <li class="list-item__drop">
+                    <a href="">Smart City</a>
+                  </li>
+                  <li class="list-item__drop">
+                    <a href="">High Energy</a>
+                  </li>
+                  <li class="list-item__drop">
+                    <a href="">Heavy Manufacturing</a>
+                  </li>
+                  <li class="list-item__drop">
+                    <a href=""> Smart Farming</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-item">
+              <a href=""> Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="psrt">
+      <section class="section-content__leftside">
+        <div class="container">
+          <div class="section-wrapper">
+            <div class="content-description">
+              <div class="logo-preview">
+                <img src="./images/icons/psrt.svg" class="logo-progect" />
+                <h2 class="heading-2__logo">PSRT</h2>
+              </div>
+              <p class="content-text">
+                <span style="font-weight: 500">
+                  Open-source platform with unique features for Industrial and
+                  Home IoT
+                </span>
+                <br />
+                <br />
+                EVA ICS is a platform for automated control and monitoring
+                systems development, for any needs, from home/office to
+                industrial setups. It is completely free for non-commercial use
+                as well as for commercial, on condition that enterprise
+                integrates it on its own. The product is distributed as a free
+                software and is available under Apache License 2.0.
+                <br />
+                <br />
+                Automated control systems are facing a new stage of evolution:
+                IoT-devices become interesting for those, who have never dealt
+                with automation, cheap programmable devices become reliable
+                enough for industrial use, commercial solutions move away from
+                old protocols and involve computer networks instead. We do not
+                reform automation - we change the approach: taking the classical
+                technology as a basis, we simplify everything else to the
+                maximum. Automation is simple and available for everyone!
+              </p>
+            </div>
+            <div class="products-preview">
+              <picture>
+                <source
+                  srcset="
+                    ./images/products/elbus.png       1x,
+                    ./images/products/2x/@elbus2x.png 2x
+                  "
+                  media="(min-width:1245px )"
+                />
+                <img
+                  src="./images/products/cloud.png"
+                  alt="logo"
+                  class="product-image"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Home</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Products</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Technologies</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Integrations and Support</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Developed Projects</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-container">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-docker"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="" class="social-list__link">
+                <svg class="links-icon" width="26" height="26">
+                  <use href="./images/icons/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer-text">&copy; 2022 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/header_menu.js" type="module"></script>
+  </body>
+</html>

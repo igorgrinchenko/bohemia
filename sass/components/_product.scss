@@ -1,0 +1,108 @@
+.docs_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 80px;
+  .manual_instalation,
+  .eva_framework {
+    padding: 20px;
+    max-width: 592px;
+    background: #1d1d1d;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0px 36px 75px rgba(6, 6, 6, 0.16);
+    border-radius: 2px;
+    h2 {
+      color: var(--accent-color);
+    }
+    .content-text {
+      margin-bottom: 16px;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 15px;
+        gap: 10px;
+        width: 267px;
+        height: 51px;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+        border-radius: 2px;
+        margin-bottom: 20px;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 22px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:hover {
+          color: white;
+          border: 1px solid var(--accent-color);
+          background-color: var(--accent-color);
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+  .manual_instalation {
+    margin-right: 32px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  margin-top: 32px;
+  button {
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1245px) {
+    margin-bottom: 20px;
+  }
+}
+
+.eva_3 {
+  .section-content__leftside {
+    margin-bottom: 220px;
+    .content-text {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.ui_manager {
+  .section-content__leftside {
+    margin-bottom: 220px;
+    .content-text {
+      margin-bottom: 32px;
+    }
+  }
+  .btn-wrapper {
+    margin-top: 0;
+  }
+}
+
+.psrt {
+  .section-content__leftside {
+    margin-bottom: 220px;
+  }
+}

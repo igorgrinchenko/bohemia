@@ -106,7 +106,7 @@
 .content-text {
   display: block;
   overflow: auto;
-  height: 180px;
+  max-height: 400;
   margin-top: 8px;
   font-family: "Inter";
   font-style: normal;
