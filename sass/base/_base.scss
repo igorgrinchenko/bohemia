@@ -1,0 +1,21 @@
+body {
+  background-color: var(--body-color);
+  font-family: "Roboto", Tahoma, sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  max-width: 1245px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: 1245px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

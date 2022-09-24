@@ -1,0 +1,203 @@
+.backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 110;
+  background-color: #4646463a;
+  transition: 0.3s;
+}
+.is-hidden {
+  transform: translateX(100%);
+  transition: 0.3s;
+}
+
+.menu-wrapper {
+  position: relative;
+  padding: 100px 50px;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--body-color);
+  overflow: auto;
+  @media (min-width: 768px) {
+    max-width: 620px;
+    padding: 180px 90px;
+  }
+}
+.burger-icon {
+  width: 28px;
+  height: 24px;
+
+  @media (min-width: 768px) {
+    width: 36px;
+    height: 30px;
+  }
+
+  @media (min-width: 1245px) {
+    width: 48px;
+    height: 40px;
+  }
+}
+.close-menu__btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    top: 20px;
+    left: 20px;
+  }
+}
+.close-icon {
+  width: 30px;
+  height: 30px;
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.menu-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  color: var(--main-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:hover .menu-list__btn {
+    fill: var(--accent-color);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+
+.main {
+  display: flex;
+  position: relative;
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+  &:hover .menu-list__btn--develop {
+    fill: var(--accent-color);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+}
+.menu-list__link {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 1.17;
+  }
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.products-list {
+  gap: 12px;
+}
+.products-link {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  color: var(--accent-color);
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.4;
+    color: var(--main-color);
+  }
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.menu-list__btn {
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  fill: var(--main-color);
+
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 16px;
+  }
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+.menu-list__btn--develop {
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  fill: var(--main-color);
+
+  @media (min-width: 768px) {
+    width: 30px;
+    height: 16px;
+  }
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+// ======== extra-classes ========
+
+.rotate {
+  transform: rotate(180deg);
+  fill: var(--accent-color);
+}
+.hover {
+  color: var(--accent-color);
+}
+.off {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+  display: none;
+}

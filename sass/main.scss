@@ -1,0 +1,24 @@
+@import "./base/reset";
+@import "./base/base";
+@import "./utils/vars";
+
+@import "./components/headings";
+@import "./components/buttons";
+
+// burger-menu
+@import "./components/burger-menu";
+
+//headers
+@import "./components/header-mobile";
+
+//======= MAIN PAGE =========//
+
+@import "./components/hero-main";
+@import "./components/projects";
+@import "./components/contacts";
+
+//======= PRODUCTS PAGE =========//
+@import "./components/products-page";
+
+//footer
+@import "./components/footer";

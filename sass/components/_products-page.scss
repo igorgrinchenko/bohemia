@@ -1,0 +1,136 @@
+.heading-1 {
+  display: block;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+
+  @media (min-width: 768px) {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.16;
+  }
+}
+
+.heading-2__logo {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+    line-height: 1.17;
+  }
+}
+
+//======== main ============//
+.section-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 20px;
+  gap: 17px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    gap: 32px;
+  }
+}
+.section-content__leftside {
+  padding-top: 16px;
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1245px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+}
+.section-wrapper__secondary {
+  padding-top: 20px;
+  gap: 17px;
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+    padding-top: 80px;
+    padding-bottom: 45px;
+  }
+}
+.content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  max-width: 592px;
+  @media (min-width: 768px) {
+  }
+}
+.logo-preview {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  @media (min-width: 768px) {
+    gap: 5px;
+    margin-top: 0px;
+  }
+}
+
+.logo-progect {
+  width: 52px;
+  height: 32px;
+
+  @media (min-width: 768px) {
+    width: 100px;
+    height: 60px;
+  }
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  @media (min-width: 768px) {
+    max-width: 590px;
+    height: auto;
+  }
+}
+
+.content-text {
+  display: block;
+  overflow: auto;
+  height: 180px;
+  margin-top: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+
+  @media (min-width: 768px) {
+    max-width: 352px;
+  }
+
+  @media (min-width: 1245px) {
+    max-width: 592px;
+  }
+}
+.bottom {
+  padding-bottom: 60px;
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1245px) {
+    padding-top: 45px;
+    padding-bottom: 120px;
+  }
+}
