@@ -24,114 +24,214 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a href="#" class="link-logo">
-          <img
-            class="logo-image"
-            src="./images/icons/evalogo.svg"
-            alt="logo"
-            width="72"
-            height="65"
-          />
-        </a>
-        <button class="header-button" type="button" id="burger">
-          <svg class="burger-icon" width="48" height="40">
-            <use href="./images/icons/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
-      </div>
-      <!-- burger-menu -->
-      <div class="backdrop is-hidden" id="backdrop">
-        <div class="menu-wrapper">
-          <button type="button" class="close-menu__btn" id="close-menu">
-            <svg class="close-icon" width="50" height="50">
-              <use href="./images/icons/icons.svg#icon-close"></use>
+      <!-- mobile version -->
+      <div class="mobile-header__wrapper">
+        <div class="container header-container">
+          <a href="#" class="link-logo">
+            <img
+              class="logo-image"
+              src="./images/icons/evalogo.svg"
+              alt="logo"
+              width="72"
+              height="65"
+            />
+          </a>
+          <button class="header-button" type="button" id="burger">
+            <svg class="burger-icon" width="48" height="40">
+              <use href="./images/icons/icons.svg#icon-burger"></use>
             </svg>
           </button>
-          <nav>
-            <ul class="menu-list">
-              <li class="menu-list__item main" id="products">
-                Products
+        </div>
+        <!-- burger-menu -->
+        <div class="backdrop is-hidden" id="backdrop">
+          <div class="menu-wrapper">
+            <button type="button" class="close-menu__btn" id="close-menu">
+              <svg class="close-icon" width="50" height="50">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu-list">
+                <li class="menu-list__item main" id="products">
+                  Products
+                  <svg
+                    type="button"
+                    class="menu-list__btn"
+                    width="30"
+                    height="16"
+                    id="dropdown"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </li>
+                <li class="menu-list__item off" id="prod-list">
+                  <ul class="products-list">
+                    <li class="products-item">
+                      <a class="products-link" href="./products.html"
+                        >All Products</a
+                      >
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">EVAICS</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">PS/RT</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">EVAICS BOX</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">BUS/RT</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">IOTE Cloud</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a href="" class="menu-list__link">Technologies</a>
+                </li>
+                <li class="menu-list__item main">
+                  <a href="" class="menu-list__link"
+                    >Integrations and Support</a
+                  >
+                </li>
+                <li class="menu-list__item main" id="developed">
+                  Developed Projects
+                  <svg
+                    type="button"
+                    class="menu-list__btn--develop"
+                    width="30"
+                    height="16"
+                    id="dropdown-developed"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </li>
+                <li class="menu-list__item off" id="develop-items">
+                  <ul class="developed-list">
+                    <li class="products-item products-link">All Projects</li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Start Your Project</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Hign Energy</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Smart City</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Heavy Manufacturing</a>
+                    </li>
+                    <li class="products-item">
+                      <a href="#" class="products-link">Farm Sector</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-list__item">
+                  <a href="" class="menu-list__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- descktop version -->
+      <div class="descktop-header__wrapper">
+        <div class="container header-container__descktop">
+          <div class="logo-wrapper">
+            <a href="#" class="header-logo__link">
+              <img
+                class="logo-image"
+                src="./images/icons/evalogo.svg"
+                alt="logo"
+                width="72"
+                height="65"
+              />
+            </a>
+          </div>
+
+          <div class="dropdown-menu">
+            <div class="menu-item main-columm">
+              <div class="main-wrapper" id="product-category">
+                <a href="#" class="dropdown-title">Products</a>
                 <svg
                   type="button"
-                  class="menu-list__btn"
-                  width="30"
-                  height="16"
-                  id="dropdown"
+                  class="menu-dropdown__btn"
+                  width="15"
+                  height="8"
+                  id="prod-icon"
                 >
                   <use href="./images/icons/icons.svg#icon-arrow-on"></use>
                 </svg>
-              </li>
-              <li class="menu-list__item off" id="prod-list">
-                <ul class="products-list">
-                  <li class="products-item">
-                    <a class="products-link" href="./products.html"
-                      >All Products</a
-                    >
+              </div>
+
+              <ul class="menu-item__list off" id="product-list">
+                <li class="list-item__drop">
+                  <a href="">EVA ICS v4</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">EVA ICS v3</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">EVA ICS Cloud Manager UI</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href=""> PSRT</a>
+                </li>
+                <li class="list-item__drop">
+                  <a href="">BUS/RT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item">
+              <a href="">Technologies</a>
+            </div>
+            <div class="menu-item">
+              <a href=""> Integrations and Support</a>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item main-columm">
+                <div class="main-wrapper" id="projects-category">
+                  <a href="" class="dropdown-title">Developed Projects</a>
+                  <svg
+                    type="button"
+                    class="menu-dropdown__btn"
+                    width="15"
+                    height="8"
+                    id="projects-icon"
+                  >
+                    <use href="./images/icons/icons.svg#icon-arrow-on"></use>
+                  </svg>
+                </div>
+
+                <ul class="menu-item__list" id="projects-list">
+                  <li class="list-item__drop">
+                    <a href=""> Start Your Project</a>
                   </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">EVAICS</a>
+                  <li class="list-item__drop">
+                    <a href="">Smart City</a>
                   </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">PS/RT</a>
+                  <li class="list-item__drop">
+                    <a href="">High Energy</a>
                   </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">EVAICS BOX</a>
+                  <li class="list-item__drop">
+                    <a href="">Heavy Manufacturing</a>
                   </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">BUS/RT</a>
-                  </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">IOTE Cloud</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu-list__item">
-                <a href="" class="menu-list__link">Technologies</a>
-              </li>
-              <li class="menu-list__item main">
-                <a href="" class="menu-list__link">Integrations and Support</a>
-              </li>
-              <li class="menu-list__item main" id="developed">
-                Developed Projects
-                <svg
-                  type="button"
-                  class="menu-list__btn--develop"
-                  width="30"
-                  height="16"
-                  id="dropdown-developed"
-                >
-                  <use href="./images/icons/icons.svg#icon-arrow-on"></use>
-                </svg>
-              </li>
-              <li class="menu-list__item off" id="develop-items">
-                <ul class="developed-list">
-                  <li class="products-item products-link">All Projects</li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">Start Your Project</a>
-                  </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">Hign Energy</a>
-                  </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">Smart City</a>
-                  </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">Heavy Manufacturing</a>
-                  </li>
-                  <li class="products-item">
-                    <a href="#" class="products-link">Farm Sector</a>
+                  <li class="list-item__drop">
+                    <a href=""> Smart Farming</a>
                   </li>
                 </ul>
-              </li>
-              <li class="menu-list__item">
-                <a href="" class="menu-list__link">Contact</a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </div>
+            <div class="menu-item">
+              <a href=""> Contact</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="hero-section">
         <div class="container hero-container hero-content">

@@ -73,7 +73,7 @@ closeMenuBtn.addEventListener("click", () => {
   backdrop.classList.add("is-hidden");
 });
 
-//drop-down menu
+//drop-down menu mobile
 
 const dropDownProducts = document.querySelector("#dropdown");
 const productsItem = document.querySelector("#prod-list");
@@ -93,4 +93,19 @@ projectsCategory.addEventListener("click", () => {
   developedItem.classList.toggle("off");
   dropDownDevelop.classList.toggle("rotate");
   projectsCategory.classList.toggle("hover");
+});
+
+//drop-down menu descktop
+
+const productsHeaderMenu = document.querySelector("#product-category");
+const productMenuList = document.querySelector("#product-list");
+const productIcon = document.querySelector("#prod-icon");
+const productsLink = document.querySelector(".dropdown-title");
+
+productsHeaderMenu.addEventListener("click", () => {
+  productMenuList.classList.toggle("off");
+  productIcon.classList.toggle("rotate");
+  productIcon.classList.toggle("fill");
+  // productsHeaderMenu.classList.toogle("hover");
+  productsLink.classList.add("active");
 });
