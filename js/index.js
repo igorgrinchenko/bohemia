@@ -100,12 +100,22 @@ projectsCategory.addEventListener("click", () => {
 const productsHeaderMenu = document.querySelector("#product-category");
 const productMenuList = document.querySelector("#product-list");
 const productIcon = document.querySelector("#prod-icon");
-const productsLink = document.querySelector(".dropdown-title");
+const productsLink = document.querySelector("dropdown-title");
 
 productsHeaderMenu.addEventListener("click", () => {
   productMenuList.classList.toggle("off");
   productIcon.classList.toggle("rotate");
-  productIcon.classList.toggle("fill");
-  // productsHeaderMenu.classList.toogle("hover");
+  productIcon.classList.toggle("hover");
+
   productsLink.classList.add("active");
+});
+
+const projectsHeaderMenu = document.querySelector("#projects-category");
+const projectMenuList = document.querySelector("#projects-list");
+const rojectLink = document.querySelector("#progect-title");
+const projectsIcon = document.querySelector("#projects-icon");
+
+projectsHeaderMenu.addEventListener("click", () => {
+  projectMenuList.classList.toggle("off");
+  projectsIcon.classList.toggle("rotate");
 });
