@@ -10,6 +10,7 @@ sliders.forEach((el) => {
     spaceBetween: 40,
     centeredSlides: true,
     grabCursor: true,
+    initialSlide: 1,
     navigation: {
       nextEl: el.querySelector(".swiper-button-next"),
       prevEl: el.querySelector(".swiper-button-prev"),
