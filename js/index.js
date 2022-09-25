@@ -125,12 +125,6 @@ productsHeaderMenu.addEventListener("click", (e) => {
   }
 });
 
-productMenuList.addEventListener("click", (e) => {
-  if (e.target) {
-    productMenuList.classList.add("off");
-  }
-});
-
 backdropHeader.addEventListener("click", (e) => {
   if (e.target === e.currentTarget) {
     productMenuClose();
@@ -146,12 +140,6 @@ projectsHeaderMenu.addEventListener("click", () => {
     projectMenuOpen();
   } else {
     projectMenuClose();
-  }
-});
-
-projectMenuList.addEventListener("click", (e) => {
-  if (e.target) {
-    projectMenuList.classList.add("off");
   }
 });
 
