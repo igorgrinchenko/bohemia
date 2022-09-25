@@ -90,9 +90,9 @@
 .swiper-slide {
   transition: 1s;
 }
-.swiper-news {
-  overflow: hidden;
-}
+// .swiper-news {
+//   overflow: hidden;
+// }
 
 .swiper-slide-active {
   transition: 1s;
@@ -311,5 +311,13 @@
     opacity: 1;
     transform: scale(1.1);
     z-index: 20;
+  }
+}
+
+//========== news ============//
+
+.section-news {
+  @media screen and (min-width: 320px) and (max-width: 1244px) {
+    display: none;
   }
 }

@@ -182,11 +182,17 @@
 }
 // ======== extra-classes ========
 
-.rotate {
+.menu-dropdown__btn.rotate {
   transform: rotate(180deg);
   fill: var(--accent-color);
 }
+.rotate {
+  transform: rotate(180deg);
+}
 .hover {
+  color: var(--accent-color);
+}
+.active {
   color: var(--accent-color);
 }
 .off {

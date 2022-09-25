@@ -1,64 +1,4 @@
 //slider
-// const sliderDesktop = document.querySelector(".swiper");
-// const sliderNews = document.querySelector(".swiper-news");
-
-// const swiper = new Swiper(sliderDesktop, {
-//   direction: "horizontal",
-//   loop: true,
-//   slidesPerView: 3,
-//   spaceBetween: 40,
-//   centeredSlides: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//       loop: true,
-//       slideToClickedSlide: true,
-//       centeredSlides: true,
-//     },
-
-//     1245: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//       slideToClickedSlide: true,
-//     },
-//   },
-// });
-
-// const swiperNews = new Swiper(sliderNews, {
-//   direction: "horizontal",
-//   loop: true,
-//   slidesPerView: 3,
-//   spaceBetween: 40,
-//   centeredSlides: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//       loop: true,
-//       slideToClickedSlide: true,
-//       centeredSlides: true,
-//     },
-
-//     1245: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//       slideToClickedSlide: true,
-//     },
-//   },
-// });
 
 const sliders = document.querySelectorAll(".swiper");
 
@@ -93,35 +33,6 @@ sliders.forEach((el) => {
     },
   });
 });
-
-// const swiperNews = new Swiper(sliderNews, {
-//   direction: "horizontal",
-//   loop: true,
-//   slidesPerView: 3,
-//   spaceBetween: 40,
-//   centeredSlides: true,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//       loop: true,
-//       slideToClickedSlide: true,
-//       centeredSlides: true,
-//     },
-
-//     1245: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//       slideToClickedSlide: true,
-//     },
-//   },
-// });
 
 const swiper2 = new Swiper(".swiper-2", {
   effect: "cards",
@@ -199,45 +110,74 @@ const productIcon = document.querySelector("#prod-icon");
 const productsLink = document.querySelector("dropdown-title");
 const backdropHeader = document.querySelector("#backdrop-header");
 
-productsHeaderMenu.addEventListener("click", () => {
-  productIcon.classList.toggle("rotate");
-  productMenuList.classList.toggle("off");
-  projectMenuList.classList.add("off");
-  backdropHeader.classList.toggle("off");
-});
-
-productMenuList.addEventListener("click", (e) => {
-  if (e.target) {
-    productMenuList.classList.add("off");
-    backdropHeader.classList.add("off");
-  }
-});
-
-backdropHeader.addEventListener("click", (e) => {
-  if (e.target === e.currentTarget) {
-    productMenuList.classList.add("off");
-    projectMenuList.classList.add("off");
-    backdropHeader.classList.add("off");
-  }
-});
-//projects
-
 const projectsHeaderMenu = document.querySelector("#projects-category");
 const projectMenuList = document.querySelector("#projects-list");
 const rojectLink = document.querySelector("#progect-title");
 const projectsIcon = document.querySelector("#projects-icon");
 
+productsHeaderMenu.addEventListener("click", (e) => {
+  if (productMenuList.classList.contains("off")) {
+    projectMenuClose();
+    productMenuOpen();
+  } else {
+    productMenuClose();
+  }
+});
+
+productMenuList.addEventListener("click", (e) => {
+  if (e.target) {
+    productMenuList.classList.add("off");
+  }
+});
+
+backdropHeader.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    productMenuClose();
+    projectMenuClose();
+  }
+});
+
+//projects
+
 projectsHeaderMenu.addEventListener("click", () => {
-  projectsIcon.classList.toggle("rotate");
-  projectMenuList.classList.toggle("off");
-  productMenuList.classList.add("off");
-  backdropHeader.classList.toggle("off");
+  if (projectMenuList.classList.contains("off")) {
+    productMenuClose();
+    projectMenuOpen();
+  } else {
+    projectMenuClose();
+  }
 });
 
 projectMenuList.addEventListener("click", (e) => {
   if (e.target) {
-    productMenuList.classList.add("off");
     projectMenuList.classList.add("off");
-    backdropHeader.classList.add("off");
   }
 });
+
+function productMenuOpen() {
+  backdropHeader.classList.remove("off");
+  productIcon.classList.add("rotate");
+  productMenuList.classList.remove("off");
+  projectMenuList.classList.add("off");
+  productsHeaderMenu.classList.add("active");
+}
+function productMenuClose() {
+  backdropHeader.classList.add("off");
+  productIcon.classList.remove("rotate");
+  productMenuList.classList.add("off");
+  productsHeaderMenu.classList.remove("active");
+}
+
+function projectMenuOpen() {
+  backdropHeader.classList.remove("off");
+  projectsIcon.classList.add("rotate");
+  projectMenuList.classList.remove("off");
+  productMenuList.classList.add("off");
+  projectsHeaderMenu.classList.add("active");
+}
+function projectMenuClose() {
+  backdropHeader.classList.add("off");
+  projectsIcon.classList.remove("rotate");
+  projectMenuList.classList.add("off");
+  projectsHeaderMenu.classList.remove("active");
+}

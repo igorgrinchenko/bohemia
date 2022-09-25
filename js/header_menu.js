@@ -42,19 +42,74 @@ const productIcon = document.querySelector("#prod-icon");
 const productsLink = document.querySelector("dropdown-title");
 const backdropHeader = document.querySelector("#backdrop-header");
 
-productsHeaderMenu.addEventListener("click", () => {
-  productMenuList.classList.toggle("off");
-  productIcon.classList.toggle("rotate");
-  backdropHeader.classList.toggle("off");
-});
-
 const projectsHeaderMenu = document.querySelector("#projects-category");
 const projectMenuList = document.querySelector("#projects-list");
 const rojectLink = document.querySelector("#progect-title");
 const projectsIcon = document.querySelector("#projects-icon");
 
-projectsHeaderMenu.addEventListener("click", () => {
-  projectMenuList.classList.toggle("off");
-  projectsIcon.classList.toggle("rotate");
-  backdropHeader.classList.toggle("off");
+productsHeaderMenu.addEventListener("click", (e) => {
+  if (productMenuList.classList.contains("off")) {
+    projectMenuClose();
+    productMenuOpen();
+  } else {
+    productMenuClose();
+  }
 });
+
+productMenuList.addEventListener("click", (e) => {
+  if (e.target) {
+    productMenuList.classList.add("off");
+  }
+});
+
+backdropHeader.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    productMenuClose();
+    projectMenuClose();
+  }
+});
+
+//projects
+
+projectsHeaderMenu.addEventListener("click", () => {
+  if (projectMenuList.classList.contains("off")) {
+    productMenuClose();
+    projectMenuOpen();
+  } else {
+    projectMenuClose();
+  }
+});
+
+projectMenuList.addEventListener("click", (e) => {
+  if (e.target) {
+    projectMenuList.classList.add("off");
+  }
+});
+
+function productMenuOpen() {
+  backdropHeader.classList.remove("off");
+  productIcon.classList.add("rotate");
+  productMenuList.classList.remove("off");
+  projectMenuList.classList.add("off");
+  productsHeaderMenu.classList.add("active");
+}
+function productMenuClose() {
+  backdropHeader.classList.add("off");
+  productIcon.classList.remove("rotate");
+  productMenuList.classList.add("off");
+  productsHeaderMenu.classList.remove("active");
+}
+
+function projectMenuOpen() {
+  backdropHeader.classList.remove("off");
+  projectsIcon.classList.add("rotate");
+  projectMenuList.classList.remove("off");
+  productMenuList.classList.add("off");
+  projectsHeaderMenu.classList.add("active");
+}
+function projectMenuClose() {
+  backdropHeader.classList.add("off");
+  projectsIcon.classList.remove("rotate");
+  projectMenuList.classList.add("off");
+  projectsHeaderMenu.classList.remove("active");
+}
