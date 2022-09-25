@@ -63,24 +63,25 @@
                 <li class="menu-list__item off" id="prod-list">
                   <ul class="products-list">
                     <li class="products-item">
-                      <a class="products-link" href="./products.html"
-                        >All Products</a
+                      <a href="./eva_v4.html" class="products-link">
+                        EVA ICS v4
+                      </a>
+                    </li>
+                    <li class="products-item">
+                      <a href="./eva_v3.html" class="products-link"
+                        >EVA ICS v3</a
                       >
                     </li>
                     <li class="products-item">
-                      <a href="#" class="products-link">EVAICS</a>
+                      <a href="./eva_ics_ui_manager.html" class="products-link"
+                        >EVA ICS Cloud Manager UI</a
+                      >
                     </li>
                     <li class="products-item">
-                      <a href="#" class="products-link">PS/RT</a>
+                      <a href="./psrt.html" class="products-link">PSRT</a>
                     </li>
                     <li class="products-item">
-                      <a href="#" class="products-link">EVAICS BOX</a>
-                    </li>
-                    <li class="products-item">
-                      <a href="#" class="products-link">BUS/RT</a>
-                    </li>
-                    <li class="products-item">
-                      <a href="#" class="products-link">IOTE Cloud</a>
+                      <a href="./bus_rt.html" class="products-link">BUS/RT</a>
                     </li>
                   </ul>
                 </li>
@@ -150,7 +151,7 @@
           <div class="dropdown-menu">
             <div class="menu-item main-columm">
               <div class="main-wrapper" id="product-category">
-                <a href="#" class="dropdown-title">Products</a>
+                <p href="#" class="dropdown-title">Products</p>
                 <svg
                   type="button"
                   class="menu-dropdown__btn"
@@ -164,19 +165,21 @@
 
               <ul class="menu-item__list off" id="product-list">
                 <li class="list-item__drop">
-                  <a href="">EVA ICS v4</a>
+                  <a href="./eva_v4.html">EVA ICS v4</a>
                 </li>
                 <li class="list-item__drop">
-                  <a href="">EVA ICS v3</a>
+                  <a href="./eva_v3.html">EVA ICS v3</a>
                 </li>
                 <li class="list-item__drop">
-                  <a href="">EVA ICS Cloud Manager UI</a>
+                  <a href="./eva_ics_ui_manager.html"
+                    >EVA ICS Cloud Manager UI</a
+                  >
                 </li>
                 <li class="list-item__drop">
-                  <a href=""> PSRT</a>
+                  <a href="./psrt.html"> PSRT</a>
                 </li>
                 <li class="list-item__drop">
-                  <a href="">BUS/RT</a>
+                  <a href="./bus_rt.html">BUS/RT</a>
                 </li>
               </ul>
             </div>
@@ -189,7 +192,7 @@
             <div class="menu-item">
               <div class="menu-item main-columm">
                 <div class="main-wrapper" id="projects-category">
-                  <a href="" class="dropdown-title">Developed Projects</a>
+                  <p href="" class="dropdown-title">Developed Projects</p>
                   <svg
                     type="button"
                     class="menu-dropdown__btn"
@@ -201,9 +204,11 @@
                   </svg>
                 </div>
 
-                <ul class="menu-item__list" id="projects-list">
+                <ul class="menu-item__list off" id="projects-list">
                   <li class="list-item__drop">
-                    <a href=""> Start Your Project</a>
+                    <a class="dropdown-title" id="progect-title" href="">
+                      Start Your Project</a
+                    >
                   </li>
                   <li class="list-item__drop">
                     <a href="">Smart City</a>
@@ -230,6 +235,7 @@
 
     <main class="eva_4">
       <section class="section-content__leftside">
+        <div class="backdrop off" id="backdrop-header"></div>
         <div class="container">
           <div class="section-wrapper">
             <div class="content-description">
@@ -331,31 +337,35 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer-container">
-        <nav class="footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Home</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Products</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Technologies</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Integrations and Support</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Developed Projects</a>
-            </li>
-            <li class="footer-nav__item">
-              <a href="#" class="footer-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="social-container">
+    <!-- mobile version -->
+    <footer class="footer-mobile">
+      <div class="mobile-footer__wrapper">
+        <div class="container footer-container">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Products</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Technologies</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link"
+                  >Integrations and Support</a
+                >
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Developed Projects</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
           <ul class="social-links__list">
             <li class="social-links__item">
               <a href="" class="social-list__link">
@@ -394,6 +404,132 @@
             </li>
           </ul>
           <p class="footer-text">&copy; 2022 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- descktop version -->
+    <footer class="footer-desktop">
+      <div class="desktop-footer__wrapper">
+        <div class="container">
+          <div class="footer-content">
+            <nav class="footer-nav-desktop">
+              <ul class="footer-home__list">
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Home</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Technologies</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link"
+                    >Integrations and Support</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-products__list">
+                <li class="footer-home__item" style="font-weight: 600">
+                  Products:
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">EVA ICS v4</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">EVA ICS v3</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link"
+                    >EVA ICS Cloud Manager UI</a
+                  >
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">PS/RT</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">BUS/RT</a>
+                </li>
+              </ul>
+              <ul class="footer-projects__list">
+                <li class="footer-home__item" style="font-weight: 600">
+                  Developed Projects:
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Start Your Project</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Smart City</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">High Energy</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Heavy Manufacturing</a>
+                </li>
+                <li class="footer-home__item">
+                  <a href="" class="footer-home__link">Smart Farming</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="footer-desktop__adress">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__item" style="font-weight: 600">
+                  Contact
+                </li>
+                <li class="footer-contacts__item">
+                  E-Innovation Centre, Priorslee,<br />
+                  Telford, TF2 9FT, United Kingdom
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="adress-links" href="mailto:ho@bohemia-automation"
+                    >ho@bohemia-automation.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="adress-links--tel" href="tel:+442922550501"
+                    >+442922550501</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="social-links__wrapper">
+              <ul class="social-links__list">
+                <li class="social-links__item">
+                  <a href="" class="social-list__link">
+                    <svg class="links-icon" width="26" height="26">
+                      <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="" class="social-list__link">
+                    <svg class="links-icon" width="26" height="26">
+                      <use href="./images/icons/icons.svg#icon-github"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="" class="social-list__link">
+                    <svg class="links-icon" width="26" height="26">
+                      <use href="./images/icons/icons.svg#icon-docker"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="" class="social-list__link">
+                    <svg class="links-icon" width="26" height="26">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="" class="social-list__link">
+                    <svg class="links-icon" width="26" height="26">
+                      <use href="./images/icons/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

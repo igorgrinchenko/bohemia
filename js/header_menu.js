@@ -1,5 +1,3 @@
-//open-close burger menu
-
 const openMenuBtn = document.querySelector("#burger");
 const closeMenuBtn = document.querySelector("#close-menu");
 const backdrop = document.querySelector("#backdrop");
@@ -36,17 +34,27 @@ projectsCategory.addEventListener("click", () => {
   projectsCategory.classList.toggle("hover");
 });
 
-//drop-down menu descktop
+//drop-down menu desktop
 
 const productsHeaderMenu = document.querySelector("#product-category");
 const productMenuList = document.querySelector("#product-list");
 const productIcon = document.querySelector("#prod-icon");
-const productsLink = document.querySelector(".dropdown-title");
+const productsLink = document.querySelector("dropdown-title");
+const backdropHeader = document.querySelector("#backdrop-header");
 
 productsHeaderMenu.addEventListener("click", () => {
   productMenuList.classList.toggle("off");
   productIcon.classList.toggle("rotate");
-  productIcon.classList.toggle("fill");
-  // productsHeaderMenu.classList.toogle("hover");
-  productsLink.classList.add("active");
+  backdropHeader.classList.toggle("off");
+});
+
+const projectsHeaderMenu = document.querySelector("#projects-category");
+const projectMenuList = document.querySelector("#projects-list");
+const rojectLink = document.querySelector("#progect-title");
+const projectsIcon = document.querySelector("#projects-icon");
+
+projectsHeaderMenu.addEventListener("click", () => {
+  projectMenuList.classList.toggle("off");
+  projectsIcon.classList.toggle("rotate");
+  backdropHeader.classList.toggle("off");
 });
