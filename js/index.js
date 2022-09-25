@@ -97,6 +97,7 @@ projectsCategory.addEventListener("click", () => {
 
 //drop-down menu descktop
 
+//products
 const productsHeaderMenu = document.querySelector("#product-category");
 const productMenuList = document.querySelector("#product-list");
 const productIcon = document.querySelector("#prod-icon");
@@ -104,10 +105,27 @@ const productsLink = document.querySelector("dropdown-title");
 const backdropHeader = document.querySelector("#backdrop-header");
 
 productsHeaderMenu.addEventListener("click", () => {
-  productMenuList.classList.toggle("off");
   productIcon.classList.toggle("rotate");
+  productMenuList.classList.toggle("off");
+  projectMenuList.classList.add("off");
   backdropHeader.classList.toggle("off");
 });
+
+productMenuList.addEventListener("click", (e) => {
+  if (e.target) {
+    productMenuList.classList.add("off");
+    backdropHeader.classList.add("off");
+  }
+});
+
+backdropHeader.addEventListener("click", (e) => {
+  if (e.target === e.currentTarget) {
+    productMenuList.classList.add("off");
+    projectMenuList.classList.add("off");
+    backdropHeader.classList.add("off");
+  }
+});
+//projects
 
 const projectsHeaderMenu = document.querySelector("#projects-category");
 const projectMenuList = document.querySelector("#projects-list");
@@ -115,7 +133,16 @@ const rojectLink = document.querySelector("#progect-title");
 const projectsIcon = document.querySelector("#projects-icon");
 
 projectsHeaderMenu.addEventListener("click", () => {
-  projectMenuList.classList.toggle("off");
   projectsIcon.classList.toggle("rotate");
+  projectMenuList.classList.toggle("off");
+  productMenuList.classList.add("off");
   backdropHeader.classList.toggle("off");
+});
+
+projectMenuList.addEventListener("click", (e) => {
+  if (e.target) {
+    productMenuList.classList.add("off");
+    projectMenuList.classList.add("off");
+    backdropHeader.classList.add("off");
+  }
 });

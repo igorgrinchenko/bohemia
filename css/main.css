@@ -1105,6 +1105,46 @@ body {
   }
 }
 
+.slide-4 {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(180deg, #ff5625 0%, rgba(255, 86, 37, 0.1) 100%), url("../images/swiper/slider-4.png");
+}
+@media (min-width: 768px) {
+  .slide-4 {
+    padding: 20px;
+  }
+}
+@media (min-width: 1245px) {
+  .slide-4 {
+    padding: 40px;
+  }
+}
+
+.slide-5 {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(180deg, #2dc5e7 0%, rgba(45, 197, 231, 0.1) 100%), url("../images/swiper/slider-5.png");
+}
+@media (min-width: 768px) {
+  .slide-5 {
+    padding: 20px;
+  }
+}
+@media (min-width: 1245px) {
+  .slide-5 {
+    padding: 40px;
+  }
+}
+
 .mobile {
   padding: 20px 30px;
   border-radius: 4px;
@@ -1681,10 +1721,7 @@ body {
   align-items: flex-end;
 }
 
-.footer-home__link,
-.footer-home__item,
-.footer-contacts__item,
-.adress-links {
+.footer-home__link {
   font-family: "Roboto Condensed";
   font-weight: 500;
   font-style: normal;
@@ -1694,15 +1731,36 @@ body {
   text-transform: capitalize;
   color: var(--main-color);
 }
-.footer-home__link:hover,
-.footer-home__item:hover,
-.footer-contacts__item:hover,
-.adress-links:hover {
+.footer-home__link:hover {
   color: var(--form-inputs-color);
+}
+
+.adress-links,
+.footer-contacts__item {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--main-color);
+}
+
+.footer-home__item {
+  font-family: "Roboto Condensed";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: var(--main-color);
 }
 
 .footer-contacts__item {
   margin-bottom: 12px;
+  color: var(--main-color);
 }
 .footer-contacts__item:last-child {
   margin-bottom: 0;
@@ -1717,7 +1775,4 @@ body {
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: var(--main-color);
-}
-.adress-links--tel:hover {
-  color: var(--form-inputs-color);
 }/*# sourceMappingURL=main.css.map */
