@@ -937,6 +937,10 @@ body {
   transition: 1s;
 }
 
+.swiper-news {
+  overflow: hidden;
+}
+
 .swiper-slide-active {
   transition: 1s;
 }
@@ -961,30 +965,21 @@ body {
 
 .swiper-button-prev {
   margin-top: 0px;
-  position: absolute;
   width: 60px;
   height: 60px;
-  transform: translateY(-50%);
-  transform: translateX(-190%);
 }
 
 .swiper-button-next {
   margin-top: 0px;
-  position: absolute;
   top: 50%;
   left: -50px;
   width: 60px;
   height: 60px;
-  transform: translateY(-50%);
-  transform: translateX(190%);
 }
 
-.slider-descktop__container {
-  position: relative;
-}
 @media (min-width: 768px) {
   .slider-descktop__container {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
