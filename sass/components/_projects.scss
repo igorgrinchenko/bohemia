@@ -153,6 +153,76 @@
   }
 }
 
+.mobile {
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+
+.slider-descktop__container .swiper .swiper-wrapper .swiper-slide-active {
+  @media (min-width: 768px) {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 20;
+  }
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    margin: 5px 8px !important;
+    width: 12px;
+    height: 12px;
+    background-color: var(--swiper-pagination-color);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--swiper-pagination-active-color);
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media (min-width: 768px) {
+    height: 420px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1245px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 550px;
+  }
+}
+.slider-descktop__container .swiper {
+  position: relative;
+
+  @media (min-width: 1245px) {
+    padding: 0 35px;
+  }
+}
+.swiper-button-prev.arrow {
+  position: absolute;
+
+  @media (min-width: 1245px) {
+    left: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.swiper-button-next.arrow {
+  position: absolute;
+
+  @media (min-width: 1245px) {
+    top: 50%;
+    right: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+//slides
+
 .slide-1 {
   display: flex;
   flex-direction: column;
@@ -258,74 +328,6 @@
 
   @media (min-width: 1245px) {
     padding: 40px;
-  }
-}
-
-.mobile {
-  padding: 20px 30px;
-  border-radius: 4px;
-}
-
-.slider-descktop__container .swiper .swiper-wrapper .swiper-slide-active {
-  @media (min-width: 768px) {
-    opacity: 1;
-    transform: scale(1.1);
-    z-index: 20;
-  }
-}
-.swiper-pagination {
-  .swiper-pagination-bullet {
-    margin: 5px 8px !important;
-    width: 12px;
-    height: 12px;
-    background-color: var(--swiper-pagination-color);
-  }
-  .swiper-pagination-bullet-active {
-    background-color: var(--swiper-pagination-active-color);
-  }
-}
-
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  @media (min-width: 768px) {
-    height: 420px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  @media (min-width: 1245px) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    height: 550px;
-  }
-}
-.slider-descktop__container .swiper {
-  position: relative;
-
-  @media (min-width: 1245px) {
-    padding: 0 35px;
-  }
-}
-.swiper-button-prev.arrow {
-  position: absolute;
-
-  @media (min-width: 1245px) {
-    left: -17px;
-    margin-top: 0px;
-    width: 60px;
-    height: 60px;
-  }
-}
-.swiper-button-next.arrow {
-  position: absolute;
-
-  @media (min-width: 1245px) {
-    top: 50%;
-    right: -17px;
-    margin-top: 0px;
-    width: 60px;
-    height: 60px;
   }
 }
 

@@ -6,9 +6,9 @@ console.log(sliders);
 sliders.forEach((el) => {
   const swiper = new Swiper(el, {
     direction: "horizontal",
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 40,
+    // loop: true,
+    // slidesPerView: 3,
+    // spaceBetween: 40,
     centeredSlides: true,
     grabCursor: true,
     initialSlide: 1,
@@ -31,6 +31,7 @@ sliders.forEach((el) => {
         spaceBetween: 40,
         slideToClickedSlide: true,
         grabCursor: true,
+        loop: true,
       },
     },
   });
@@ -41,7 +42,7 @@ const swiper2 = new Swiper(".swiper-2", {
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
-    type: 'bullets',
+    type: "bullets",
   },
   cardsEffect: {
     rotate: false,

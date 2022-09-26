@@ -1242,6 +1242,83 @@ body {
   }
 }
 
+.mobile {
+  padding: 20px 30px;
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .slider-descktop__container .swiper .swiper-wrapper .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 20;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 5px 8px !important;
+  width: 12px;
+  height: 12px;
+  background-color: var(--swiper-pagination-color);
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--swiper-pagination-active-color);
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    height: 420px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1245px) {
+  .swiper-wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 550px;
+  }
+}
+
+.slider-descktop__container .swiper {
+  position: relative;
+}
+@media (min-width: 1245px) {
+  .slider-descktop__container .swiper {
+    padding: 0 35px;
+  }
+}
+
+.swiper-button-prev.arrow {
+  position: absolute;
+}
+@media (min-width: 1245px) {
+  .swiper-button-prev.arrow {
+    left: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.swiper-button-next.arrow {
+  position: absolute;
+}
+@media (min-width: 1245px) {
+  .swiper-button-next.arrow {
+    top: 50%;
+    right: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .slide-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1426,6 +1503,7 @@ body {
   }
 }
 
+<<<<<<< Updated upstream
 .mobile {
   padding: 20px 30px;
   border-radius: 4px;
@@ -1451,6 +1529,8 @@ body {
   background-color: var(--swiper-pagination-active-color);
 }
 
+=======
+>>>>>>> Stashed changes
 @media screen and (min-width: 320px) and (max-width: 1244px) {
   .section-news {
     display: none;
