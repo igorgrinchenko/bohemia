@@ -1,6 +1,7 @@
 //slider
 
 const sliders = document.querySelectorAll(".swiper");
+console.log(sliders);
 
 sliders.forEach((el) => {
   const swiper = new Swiper(el, {
@@ -38,7 +39,10 @@ sliders.forEach((el) => {
 const swiper2 = new Swiper(".swiper-2", {
   effect: "cards",
   grabCursor: true,
-
+  pagination: {
+    el: ".swiper-pagination",
+    type: 'bullets',
+  },
   cardsEffect: {
     rotate: false,
     perSlideOffset: 10,
