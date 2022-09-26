@@ -84,6 +84,9 @@
   &.active {
     color: var(--accent-color);
   }
+  &:hover .menu-dropdown__btn {
+    fill: var(--accent-color);
+  }
 }
 .main-columm {
   position: relative;
@@ -103,9 +106,6 @@
   color: inherit;
   &:hover {
     color: var(--accent-color);
-  }
-  &:hover.menu-dropdown__btn {
-    fill: var(--accent-color);
   }
 }
 

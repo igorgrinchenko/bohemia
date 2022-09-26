@@ -609,6 +609,9 @@ body {
 .main-wrapper.active {
   color: var(--accent-color);
 }
+.main-wrapper:hover .menu-dropdown__btn {
+  fill: var(--accent-color);
+}
 
 .main-columm {
   position: relative;
@@ -631,9 +634,6 @@ body {
 }
 .dropdown-title:hover {
   color: var(--accent-color);
-}
-.dropdown-title:hover.menu-dropdown__btn {
-  fill: var(--accent-color);
 }
 
 .list-item__drop > a {
