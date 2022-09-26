@@ -50,7 +50,10 @@
   line-height: 140%;
   letter-spacing: 0.01em;
   color: var(--main-color);
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1245px) {
+    width: 300px;
+  }
+  @media (min-width: 1245px) {
     width: 500px;
   }
 }
@@ -60,8 +63,12 @@
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1245px) {
     padding: 0;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1245px) {
     margin-left: auto;
   }
 }

@@ -1235,7 +1235,12 @@ body {
   letter-spacing: 0.01em;
   color: var(--main-color);
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1245px) {
+  .news-description {
+    width: 300px;
+  }
+}
+@media (min-width: 1245px) {
   .news-description {
     width: 500px;
   }
@@ -1247,9 +1252,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1245px) {
   .news-priview {
     padding: 0;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1245px) {
+  .news-priview {
     margin-left: auto;
   }
 }
