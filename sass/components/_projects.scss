@@ -90,9 +90,6 @@
 .swiper-slide {
   transition: 1s;
 }
-// .swiper-news {
-//   overflow: hidden;
-// }
 
 .swiper-slide-active {
   transition: 1s;
@@ -117,26 +114,17 @@
 
 .swiper-button-prev {
   margin-top: 0px;
-  // position: absolute;
   width: 60px;
   height: 60px;
-
-  // transform: translateY(-50%);
-  // transform: translateX(-190%);
 }
 .swiper-button-next {
   margin-top: 0px;
-  // position: absolute;
   top: 50%;
   left: -50px;
   width: 60px;
   height: 60px;
-  // transform: translateY(-50%);
-  // transform: translateX(190%);
 }
 .slider-descktop__container {
-  // position: relative;
-
   @media (min-width: 768px) {
     width: 100%;
     margin-left: auto;
@@ -149,7 +137,6 @@
 }
 
 .swiper-wrapper {
-  // position: relative;
   display: flex;
   align-items: center;
   width: 100%;

@@ -630,6 +630,9 @@ body {
 .dropdown-title:hover {
   color: var(--accent-color);
 }
+.dropdown-title:hover.menu-dropdown__btn {
+  fill: var(--accent-color);
+}
 
 .list-item__drop > a {
   font-family: "Roboto Condensed";
