@@ -112,18 +112,6 @@
   height: 400px;
 }
 
-.swiper-button-prev {
-  margin-top: 0px;
-  width: 60px;
-  height: 60px;
-}
-.swiper-button-next {
-  margin-top: 0px;
-  top: 50%;
-  left: -50px;
-  width: 60px;
-  height: 60px;
-}
 .slider-descktop__container {
   @media (min-width: 768px) {
     width: 100%;
@@ -136,38 +124,23 @@
   margin-right: auto;
 }
 
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  @media (min-width: 768px) {
-    height: 420px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  @media (min-width: 1245px) {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    height: 550px;
-  }
-}
-.swiper-slide .slide-1 .slide-2 .slide-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
+// .swiper-slide .slide-1 .slide-2 .slide-3 {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   display: flex;
+//   flex-direction: column;
 
-  @media (min-width: 768px) {
-    width: 320px;
-  }
+//   @media (min-width: 768px) {
+//     width: 320px;
+//   }
 
-  @media (min-width: 1245px) {
-    width: 344px;
-    height: 480px;
-    padding: 40px;
-  }
-}
+//   @media (min-width: 1245px) {
+//     width: 344px;
+//     height: 480px;
+//     padding: 40px;
+//   }
+// }
 .swiper-wrapper .swiper-slide {
   @media (min-width: 768px) {
     height: 380px;
@@ -309,6 +282,50 @@
   }
   .swiper-pagination-bullet-active {
     background-color: var(--swiper-pagination-active-color);
+  }
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media (min-width: 768px) {
+    height: 420px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 1245px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 550px;
+  }
+}
+.slider-descktop__container .swiper {
+  position: relative;
+
+  @media (min-width: 1245px) {
+    padding: 0 35px;
+  }
+}
+.swiper-button-prev.arrow {
+  position: absolute;
+
+  @media (min-width: 1245px) {
+    left: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.swiper-button-next.arrow {
+  position: absolute;
+
+  @media (min-width: 1245px) {
+    top: 50%;
+    right: -17px;
+    margin-top: 0px;
+    width: 60px;
+    height: 60px;
   }
 }
 
