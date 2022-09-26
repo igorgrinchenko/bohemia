@@ -44,10 +44,15 @@ const swiper2 = new Swiper(".swiper-2", {
     el: ".swiper-pagination",
     type: "bullets",
   },
+
   cardsEffect: {
     rotate: false,
     perSlideOffset: 10,
   },
+  // navigation: {
+  //   nextEl: el.querySelector(".swiper-button-next"),
+  //   prevEl: el.querySelector(".swiper-button-prev"),
+  // },
 });
 
 ////adaptive sliders
