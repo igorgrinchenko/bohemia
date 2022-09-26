@@ -7,7 +7,7 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>EVA ICS 4</title>
+    <title>Contacts</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Open+Sans:wght@600&family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
@@ -233,106 +233,90 @@
       </div>
     </header>
 
-    <main class="eva_4">
-      <section class="section-content__leftside">
-        <div class="backdrop off" id="backdrop-header"></div>
-        <div class="container">
-          <div class="section-wrapper">
-            <div class="content-description">
-              <div class="logo-preview">
-                <svg class="logo-progect" width="100" height="60">
-                  <use href="./images/icons/icons.svg#icon-logo-2"></use>
-                </svg>
-                <h2 class="heading-2__logo">
-                  EVA ICS <span style="color: #4894d3">v4</span>
-                </h2>
-              </div>
-
-              <p class="content-text">
-                <span style="font-weight: 500">
-                  Open-source platform with unique features for Industrial and
-                  Home IoT
-                </span>
-                <br />
-                <br />
-                EVA ICS is a platform for automated control and monitoring
-                systems development, for any needs, from home/office to
-                industrial setups. It is completely free for non-commercial use
-                as well as for commercial, on condition that enterprise
-                integrates it on its own. The product is distributed as a free
-                software and is available under Apache License 2.0.
-                <br />
-                <br />
-                Automated control systems are facing a new stage of evolution:
-                IoT-devices become interesting for those, who have never dealt
-                with automation, cheap programmable devices become reliable
-                enough for industrial use, commercial solutions move away from
-                old protocols and involve computer networks instead. We do not
-                reform automation - we change the approach: taking the classical
-                technology as a basis, we simplify everything else to the
-                maximum. Automation is simple and available for everyone!
-              </p>
-            </div>
-            <div class="products-preview">
-              <picture>
-                <source
-                  srcset="
-                    ./images/products/eva-image.png 1x,
-                    ./images/products/2x/@eva2x.png 2x
-                  "
-                  media="(min-width:1245px )"
-                />
-                <img
-                  src="./images/products/eva-image.png"
-                  alt="logo"
-                  class="product-image"
-                  loading="lazy"
-                />
-              </picture>
-            </div>
+    <main class="contacts">
+      <section class="section-contacts">
+        <div class="container contacts-wrapper">
+          <div class="backdrop off" id="backdrop-header"></div>
+          <div class="contacts-box">
+            <h2 class="heading-2">Contact:</h2>
+            <address>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  E-Innovation Centre, Priorslee, Telford, TF2 9FT, United
+                  Kingdom
+                </li>
+                <li class="contacts-list__item">
+                  <a href="mailto:ho@bohemia-automation"
+                    >ho@bohemia-automation.com</a
+                  >
+                </li>
+                <li class="contacts-list__item">
+                  <a href="tel:+442922550501">+442922550501</a>
+                </li>
+              </ul>
+            </address>
           </div>
-        </div>
-      </section>
-      <section class="section-content__leftside">
-        <div class="container">
-          <div class="docs_wrapper">
-            <div class="manual_instalation">
-              <h2 class="heading-2">Manual Instalation</h2>
-              <p class="content-text" style="font-weight: 500">
-                Requirements: Linux, Python 3.6+, for cloud setup: MQTT server
-                or Amazon AWS
-              </p>
-              <div class="buttons">
-                <button>Install Documantation</button>
-                <button>Latest buids (v3.4.2)</button>
-                <button>Source code (v3.4.2)</button>
-              </div>
-            </div>
-            <div class="eva_framework">
-              <h2 class="heading-2">Manual Instalation</h2>
-              <p class="content-text" style="font-weight: 500">
-                Requirements: Linux, Python 3.6+, for cloud setup: MQTT server
-                or Amazon AWS
-              </p>
-              <div class="buttons">
-                <button>Install Documantation</button>
-                <button>Latest buids (v3.4.2)</button>
-                <button>Source code (v3.4.2)</button>
-              </div>
-            </div>
-          </div>
-          <div class="content-description">
-            <h2 class="heading-2__logo">HMI Application</h2>
-            <p class="content-text">
-              <span style="font-weight: 500">
-                Ready-to-use web interface applications
-              </span>
-              Block UI, simple but flexible HMI app
-            </p>
-            <div class="btn-wrapper">
-              <button class="button-disabled">Source Code</button>
-              <button class="button-active">Documentation</button>
-            </div>
+          <div class="contacts-form__wrapper">
+            <form class="contacts-form">
+              <span class="contacts-form__text"
+                >For all questions regarding integration, support and
+                partnership, contact product vendor - Altertech Group:</span
+              >
+              <label class="form-field" for="name"
+                ><span class="contacts-form__text">Full Name *</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder=" "
+                />
+              </label>
+              <label class="form-field" for="company"
+                ><span class="contacts-form__text">Company *</span>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="company"
+                  id="company"
+                  placeholder=" "
+                />
+              </label>
+              <label class="form-field" for="email"
+                ><span class="contacts-form__text">Email *</span>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                />
+              </label>
+              <label class="form-field" for="phone"
+                ><span class="contacts-form__text"
+                  >Phone number (optional)</span
+                >
+                <input
+                  class="form-input"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder=" "
+                />
+              </label>
+              <label class="form-field" for="comment"
+                ><span class="contacts-form__text"
+                  >Any special requirements?</span
+                >
+                <textarea
+                  class="form-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder=" "
+                ></textarea>
+              </label>
+              <button class="button-disabled" type="button">Submit</button>
+            </form>
           </div>
         </div>
       </section>

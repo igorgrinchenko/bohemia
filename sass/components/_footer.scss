@@ -111,6 +111,8 @@
 }
 .footer-content {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .desktop-footer__wrapper {
   padding-top: 20px;
@@ -137,7 +139,6 @@
   margin-left: 65px;
 }
 .social-links__wrapper {
-  margin-left: auto;
   display: flex;
   align-items: flex-end;
 }
@@ -192,4 +193,13 @@
   letter-spacing: 0.01em;
   text-transform: capitalize;
   color: var(--main-color);
+}
+.footer-contacts__list {
+  .footer-contacts__item {
+    display: flex;
+    justify-content: end;
+  }
+  .reserved_rights {
+    color: var(--secondary-color);
+  }
 }

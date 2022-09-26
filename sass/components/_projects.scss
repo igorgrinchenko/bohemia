@@ -7,7 +7,7 @@
   padding-bottom: 40px;
 
   @media (min-width: 768px) {
-    padding-top: 125px;
+    padding-top: 90px;
     padding-bottom: 60px;
   }
 }
@@ -298,6 +298,17 @@
     opacity: 1;
     transform: scale(1.1);
     z-index: 20;
+  }
+}
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    margin: 5px 8px !important;
+    width: 12px;
+    height: 12px;
+    background-color: var(--swiper-pagination-color);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--swiper-pagination-active-color);
   }
 }
 
