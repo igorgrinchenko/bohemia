@@ -3,8 +3,11 @@
 }
 .news-wrapper {
   margin-top: 20px;
-
   border: 1px solid #8e8e8e;
+
+  @media (min-width: 768px) {
+    margin-top: 40px;
+  }
 }
 .news-box {
   padding: 12px 72px 12px 8px;
