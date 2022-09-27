@@ -34,43 +34,6 @@ const swiper = new Swiper(slider, {
   },
 });
 
-// const sliders = document.querySelectorAll(".swiper");
-// console.log(sliders);
-
-// sliders.forEach((el) => {
-//   const swiper = new Swiper(el, {
-//     direction: "horizontal",
-//     // loop: true,
-//     // slidesPerView: 3,
-//     // spaceBetween: 40,
-//     centeredSlides: true,
-//     grabCursor: true,
-//     initialSlide: 1,
-//     navigation: {
-//       nextEl: el.querySelector(".swiper-button-next"),
-//       prevEl: el.querySelector(".swiper-button-prev"),
-//     },
-
-//     breakpoints: {
-//       768: {
-//         slidesPerView: 3,
-//         spaceBetween: 0,
-//         loop: true,
-//         slideToClickedSlide: true,
-//         centeredSlides: true,
-//       },
-
-//       1245: {
-//         slidesPerView: 3,
-//         spaceBetween: 40,
-//         slideToClickedSlide: true,
-//         grabCursor: true,
-//         loop: true,
-//       },
-//     },
-//   });
-// });
-
 const swiper2 = new Swiper(".swiper-2", {
   effect: "cards",
   grabCursor: true,
