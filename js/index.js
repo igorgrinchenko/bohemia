@@ -4,9 +4,6 @@ const slider = document.querySelector(".swiper");
 
 const swiper = new Swiper(slider, {
   direction: "horizontal",
-  // loop: true,
-  // slidesPerView: 3,
-  // spaceBetween: 40,
   centeredSlides: true,
   grabCursor: true,
   initialSlide: 1,
@@ -45,14 +42,10 @@ const swiper2 = new Swiper(".swiper-2", {
     clickable: true,
   },
 
-  cardsEffect: {
-    rotate: false,
-    perSlideOffset: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    // prevEl: el.querySelector(".swiper-button-prev"),
   },
-  // navigation: {
-  //   nextEl: el.querySelector(".swiper-button-next"),
-  //   prevEl: el.querySelector(".swiper-button-prev"),
-  // },
 });
 
 ////adaptive sliders
