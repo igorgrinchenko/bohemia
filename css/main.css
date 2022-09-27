@@ -978,12 +978,20 @@ body {
   padding-right: 20px;
 }
 
+.swiper-2 .swiper-wripper {
+  padding-right: 40px;
+}
+
 @media (min-width: 768px) {
   .slider-descktop__container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.slider-mobile__container {
+  overflow: hidden;
 }
 
 .slider-__container {
