@@ -35,7 +35,7 @@ const swiper = new Swiper(slider, {
 });
 
 const swiper2 = new Swiper(".swiper-2", {
-  effect: "cards",
+  // effect: "cards",
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
