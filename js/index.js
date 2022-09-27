@@ -35,7 +35,8 @@ const swiper2 = new Swiper(".swiper-2", {
   direction: "horizontal",
   spaceBetween: 50,
   grabCursor: true,
-
+  loop: true,
+  slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
@@ -44,7 +45,7 @@ const swiper2 = new Swiper(".swiper-2", {
 
   navigation: {
     nextEl: ".swiper-button-next",
-    // prevEl: el.querySelector(".swiper-button-prev"),
+    prevEl: ".swiper-button-prev",
   },
 });
 
