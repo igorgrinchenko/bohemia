@@ -35,12 +35,14 @@ const swiper = new Swiper(slider, {
 });
 
 const swiper2 = new Swiper(".swiper-2", {
-  effect: "cards",
+  direction: "horizontal",
+  spaceBetween: 50,
   grabCursor: true,
+
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
-    clickable: true
+    clickable: true,
   },
 
   cardsEffect: {
